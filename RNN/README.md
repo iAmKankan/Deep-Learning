@@ -9,3 +9,6 @@ introducing loopback connections between neurons such a Recurrent Neural Network
 training can be improved by changing the neural network topology from a single hidden layer feed forward network to something else.
 
 <img src="https://github.com/iAmKankan/Deep-Learning/blob/master/RNN/rnn3.png?raw=true">
+ 
+## Types of RNNS
+<img src="https://github.com/iAmKankan/Deep-Learning/blob/master/RNN/types%20of%20rnn.png?raw=true">
