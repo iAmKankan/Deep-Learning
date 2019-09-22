@@ -19,6 +19,8 @@ ReLu -Rectified linear units
 
 ## [Back-propagation](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/) 
 <img src="https://github.com/iAmKankan/Deep-Learning/blob/master/Pictures/b1.png?raw=true">
+
+
 ### What is error?
 * Error or lost is the difference between the actual value and the expected value.
 * In deep Neural Net we adding up the Waights in every layer and at the end (or between-ReLu for hidden layer)we calculate all the waightes with a Activation function.
