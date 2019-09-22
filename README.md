@@ -22,7 +22,7 @@ ReLu -Rectified linear units
 
 
 ### What is error?
-* Error or lost is the difference between the actual value and the expected value.
+* Error or loss is the difference between the actual value and the expected value.
 * In deep Neural Net we adding up the Waights in every layer and at the end (or between-ReLu for hidden layer)we calculate all the waightes with a Activation function.
 * The main perpose of back propagation is to go back in the Neural Network and modify the weights 
 <img src="https://github.com/iAmKankan/Deep-Learning/blob/master/Pictures/neural_network-9.png?raw=true">
