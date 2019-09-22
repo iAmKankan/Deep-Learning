@@ -17,10 +17,13 @@ Tanh — Hyperbolic tangent
 ReLu -Rectified linear units
 
 
-## Back-propagation 
+[## Back-propagation](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/) 
+
+
+
 * Backpropagation is a technique used to train certain classes of neural networks – it is essentially a principal that allows the machine learning program to adjust itself according to looking at its past function.
 * Backpropagation is sometimes called the “backpropagation of errors.”
 * Backpropagation as a technique uses gradient descent: It calculates the gradient of the loss function at output, and distributes it back through the layers of a deep neural network. The result is adjusted weights for neurons.
 
 <img src="https://github.com/iAmKankan/Deep-Learning/blob/master/Pictures/bpropagation.png?raw=true">
-
+neural_network-7.png
