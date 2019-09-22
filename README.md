@@ -17,7 +17,7 @@ Tanh — Hyperbolic tangent
 ReLu -Rectified linear units
 
 
-[## Back-propagation](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/) 
+## [Back-propagation](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/) 
 
 
 
