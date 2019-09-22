@@ -19,12 +19,15 @@ ReLu -Rectified linear units
 
 ## [Back-propagation](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/) 
 <img src="https://github.com/iAmKankan/Deep-Learning/blob/master/Pictures/b1.png?raw=true">
-
-
+### What is error?
+* Error or lost is the difference between the actual value and the expected value.
+* In deep Neural Net we adding up the Waights in every layer and at the end (or between-ReLu for hidden layer)we calculate all the waightes with a Activation function.
+* The main perpose of back propagation is to go back in the Neural Network and modify the weights 
+<img src="https://github.com/iAmKankan/Deep-Learning/blob/master/Pictures/neural_network-9.png?raw=true">
 
 * Backpropagation is a technique used to train certain classes of neural networks – it is essentially a principal that allows the machine learning program to adjust itself according to looking at its past function.
 * Backpropagation is sometimes called the “backpropagation of errors.”
 * Backpropagation as a technique uses gradient descent: It calculates the gradient of the loss function at output, and distributes it back through the layers of a deep neural network. The result is adjusted weights for neurons.
 
-<img src="https://github.com/iAmKankan/Deep-Learning/blob/master/Pictures/bpropagation.png?raw=true">
-neural_network-7.png
+
+
