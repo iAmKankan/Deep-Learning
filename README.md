@@ -18,6 +18,7 @@ ReLu -Rectified linear units
 
 
 ## [Back-propagation](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/) 
+<img src="https://github.com/iAmKankan/Deep-Learning/blob/master/Pictures/neural_network-7.png?raw=true">
 
 
 
