@@ -41,8 +41,8 @@ The following shows a classification and regression neural network:
 
 
 * Notice that **the output of the regression neural network is numeric** and **the output of the classification is a class.**
-* **Regression, or two-class classification, networks always have a single output.  **
-* **Classification neural networks have an output neuron for each class. **
+* **Regression, or two-class classification, networks always have a single output.**
+* **Classification neural networks have an output neuron for each class.**
 
 
 ---
