@@ -1,3 +1,33 @@
+## Neural Network Basics
+
+* Neural networks were one of the first machine learning models.
+* Deep learning implies the use of neural networks.  
+* The **"deep"** in deep learning refers to a neural network with many hidden layers.  
+
+* Neural networks accept input and produce output.  
+    * The input to a neural network is called the feature vector.  
+    * The size of this vector is always a fixed length.  
+    * Changing the size of the feature vector means recreating the entire neural network.  
+    * A vector implies a 1D array.  Historically the input to a neural network was always 1D.  
+    * However, with modern neural networks you might see inputs, such as:-
+
+* **1D Vector** - Classic input to a neural network, similar to rows in a spreadsheet.  Common in predictive modeling.
+* **2D Matrix** - Grayscale image input to a convolutional neural network (CNN).
+* **3D Matrix** - Color image input to a convolutional neural network (CNN).
+* **nD Matrix** - Higher order input to a CNN.
+
+Prior to CNN's, the image input was sent to a neural network simply by squashing the image matrix into a long array by placing the image's rows side-by-side.  CNNs are different, as the nD matrix literally passes through the neural network layers.
+
+
+**Dimensions** The term dimension can be confusing in neural networks.  In the sense of a 1D input vector, dimension refers to how many elements are in that 1D array.  
+* For example a neural network with 10 input neurons has 10 dimensions.  
+* However, now that we have CNN's, the input has dimensions too.  
+* The input to the neural network will *usually* have 1, 2 or 3 dimensions.  4 or more dimensions is unusual.  
+----------
+* You might have a 2D input to a neural network that has 64x64 pixels. 
+* This would result in 4,096 input neurons.  
+* This network is either** 2D or 4,096D, **depending on which set of dimensions you are talking about!
+
 # Deep-Learning
 Deep learning is a machine learning technique that teaches computers to do what comes naturally to humans: learn by example
 
