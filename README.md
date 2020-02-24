@@ -28,6 +28,56 @@ Prior to CNN's, the image input was sent to a neural network simply by squashing
 * This would result in 4,096 input neurons.  
 * This network is either** 2D or 4,096D, **depending on which set of dimensions you are talking about!
 
+# Classification or Regression
+
+Like many models, neural networks can function in classification or regression:
+
+* **Regression** - You expect a number as your neural network's prediction.
+* **Classification** - You expect a class/category as your neural network's prediction.(the number of Input = The number of Output)
+
+The following shows a classification and regression neural network:
+
+![Neural Network Classification and Regression](https://raw.githubusercontent.com/jeffheaton/t81_558_deep_learning/master/images/class_2_ann_class_reg.png "Neural Network Classification and Regression")
+
+
+* Notice that **the output of the regression neural network is numeric** and **the output of the classification is a class.**
+* **Regression, or two-class classification, networks always have a single output.  **
+* **Classification neural networks have an output neuron for each class. **
+
+
+---
+
+<img src='https://github.com/arijitBhadra/Deep-Learning/blob/master/Pictures/BasicNN2.jpeg?raw=true'>
+
+The Calculation would be like-             
+* **(I1W1+I2W2+B)** = Weighted sum ;and it would be go through the Activation function    
+* Where **'I'** is the input and **'W'** is the weight.
+
+
+The following diagram shows a typical neural network:
+
+![Feedforward Neural Networks](https://raw.githubusercontent.com/jeffheaton/t81_558_deep_learning/master/images/class_2_ann.png "Feedforward Neural Networks")
+
+
+
+
+
+There are usually four types of neurons in a neural network:
+
+* **Input Neurons** - Each input neuron is mapped to one element in the feature vector.
+* **Hidden Neurons** - Hidden neurons allow the neural network to abstract and process the input into the output.
+* **Output Neurons** - Each output neuron calculates one part of the output.
+* **Context Neurons** - Holds state between calls to the neural network to predict.
+* **Bias Neurons** - Work similar to the y-intercept of a linear equation.  
+
+These neurons are grouped into layers:
+
+* **Input Layer** - The input layer accepts feature vectors from the dataset.  Input layers usually have a bias neuron.
+* **Output Layer** - The output from the neural network.  The output layer does not have a bias neuron.
+* **Hidden Layers** - Layers that occur between the input and output layers.  Each hidden layer will usually have a bias neuron.
+
+
+
 # Deep-Learning
 Deep learning is a machine learning technique that teaches computers to do what comes naturally to humans: learn by example
 
