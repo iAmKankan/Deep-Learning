@@ -1,4 +1,4 @@
-# Rexurrent Neural Network
+# Recurrent Neural Network
 * Processing sequences and time series requires some sort of memory since dynamic temporal behaviour is also adding information to the whole picture. So by
 introducing loopback connections between neurons such a Recurrent Neural Network can remember past events.
 
