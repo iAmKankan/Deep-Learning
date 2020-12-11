@@ -8,3 +8,14 @@
    * Input gate, 
    * Output gate.
 ![LSTM.png](LSTM.png)
+
+
+#### Forget Gate:
+Decides how much of the past you should remember.
+
+#### Update Gate/input gate:
+Decides how much of this unit is added to the current state.
+
+
+#### Output Gate:
+Decides which part of the current cell makes it to the output.
