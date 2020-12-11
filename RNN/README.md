@@ -44,9 +44,9 @@ We speak of Exploding Gradients when the algorithm assigns a stupidly high impor
     * Relu activation function.
     * LSTM, GRU.
 2. **Exploding Gradience can be overcome with**
-* Truncated BTT(instead starting backprop at the last time stamp, we can choose similar time stamp, which is just before it.)
-Clip Gradience to threshold.
-RMSprop to adjust learning rate
+    * Truncated BTT(instead starting backprop at the last time stamp, we can choose similar time stamp, which is just before it.)
+    * Clip Gradience to threshold.
+    * RMSprop to adjust learning rate
 
 
 
