@@ -1,3 +1,6 @@
+## What are Neural networks?
+Neural networks are set of algorithms inspired by the functioning of human brian. Generally when you open your eyes, what you see is called data and is processed by the Nuerons(data processing cells) in your brain, and recognises what is around you. That’s how similar the Neural Networks works. They takes a large set of data, process the data(draws out the patterns from data), and outputs what it is.
+
 ## Neural Network Basics
 
 * Neural networks were one of the first machine learning models.
@@ -111,5 +114,10 @@ ReLu -Rectified linear units
 * Backpropagation is sometimes called the “backpropagation of errors.”
 * Backpropagation as a technique uses gradient descent: It calculates the gradient of the loss function at output, and distributes it back through the layers of a deep neural network. The result is adjusted weights for neurons.
 
+
+## Bibliography:
+* https://medium.com/@purnasaigudikandula/recurrent-neural-networks-and-lstm-explained-7f51c7f6bbb9
+* https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
+* Andrew Ng- Coursera
 
 
