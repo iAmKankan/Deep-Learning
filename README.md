@@ -1,3 +1,47 @@
+## Index
+![dark](https://user-images.githubusercontent.com/12748752/136656705-67e1f667-b192-4ce3-a95a-97dc1b982fd8.png)
+
+
+## Deep Learning
+![dark](https://user-images.githubusercontent.com/12748752/136656705-67e1f667-b192-4ce3-a95a-97dc1b982fd8.png)
+* Deep learning is a more approachable name for an artificial neural network. 
+* The “deep” in deep learning refers to the depth of the network a.k.a Hidden layers. But an artificial neural network can also be very shallow.
+
+### Neural Network
+![light](https://user-images.githubusercontent.com/12748752/136656706-ad904776-3e69-4a32-bc28-edfc9fd41cf7.png)
+* Neural networks are inspired by the structure of the cerebral cortex.
+* At the basic level is the **Perceptron**, the mathematical representation of a biological neuron.
+* Like in the cerebral cortex, there can be several layers of _interconnected perceptrons_.
+
+### The Perceptron
+![light](https://user-images.githubusercontent.com/12748752/136656706-ad904776-3e69-4a32-bc28-edfc9fd41cf7.png)
+
+* Its the simplest ANN architecture. It was invented by Frank Rosenblatt in 1957 and published as `Rosenblatt, Frank (1958), The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain, Cornell Aeronautical Laboratory, Psychological Review, v65, No. 6, pp. 386–408. doi:10.1037/h0042519`
+ 
+* Lets see the architecture shown below - 
+    
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ArtificialNeuronModel_english.png/1024px-ArtificialNeuronModel_english.png" width=40%>
+
+* Common activation functions used for Perceptrons are (with threshold at 0)- 
+* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## What are Neural networks?
 Neural networks are set of algorithms inspired by the functioning of human brian. Generally when you open your eyes, what you see is called data and is processed by the Nuerons(data processing cells) in your brain, and recognises what is around you. That’s how similar the Neural Networks works. They takes a large set of data, process the data(draws out the patterns from data), and outputs what it is.
 
