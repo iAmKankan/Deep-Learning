@@ -1,7 +1,13 @@
 ## Index
 ![dark](https://user-images.githubusercontent.com/12748752/136656705-67e1f667-b192-4ce3-a95a-97dc1b982fd8.png)
-
-
+* [Neural Network](#neural-network)
+   * [The Perceptron](#the-perceptron)
+     * [Perceptron learning Rule or Update Weights](#perceptron-learning-rule-or-update-weights)
+   * [Bias](#bias)
+* [Activation Function](#activation-function)
+   * [Sigmoid]()
+* [Optimizer]()
+   * [Adams]()
 ## Deep Learning
 ![dark](https://user-images.githubusercontent.com/12748752/136656705-67e1f667-b192-4ce3-a95a-97dc1b982fd8.png)
 * Deep learning is a more approachable name for an artificial neural network. 
@@ -20,16 +26,73 @@
  
 * Lets see the architecture shown below - 
     
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ArtificialNeuronModel_english.png/1024px-ArtificialNeuronModel_english.png" width=40%>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ArtificialNeuronModel_english.png/1024px-ArtificialNeuronModel_english.png" width=40%> 
+* Common activation functions used for Perceptrons are (with threshold at 0)- 
+<img src="https://latex.codecogs.com/svg.image?step(z)\&space;or\&space;heaviside(z)&space;=\begin{cases}0&space;&&space;z<0\\&space;1&space;&&space;z\geq&space;0\end{cases}&space;" title="step(z)\ or\ heaviside(z) =\begin{cases}0 & z<0\\ 1 & z\geq 0\end{cases} " />
 
 * Common activation functions used for Perceptrons are (with threshold at 0)- 
-* 
+
+> <img src="https://latex.codecogs.com/svg.image?z\&space;=&space;\&space;X_1W_1&plus;X_2W_2&plus;X_3W_3&space;\&space;\&space;\textit{,&space;or&space;we&space;can&space;write&space;it&space;as&space;}\&space;\&space;\&space;z\&space;=&space;\&space;\sum_{i=1}^{n}&space;X_iW_i&space;&space;" title="z\ = \ X_1W_1+X_2W_2+X_3W_3 \ \ \textit{, or we can write it as }\ \ \ z\&space;=&space;\&space;\sum_{i=1}^{n} X_iW_i &space;" width=70% />
+
+* If we want to multiply W and X we will end up with two matrices-
+* For multiplication of 2 matrices we need to have 1st matrix column= 2nd matrix row thats why we take transpose of matrix W -> <img src="https://latex.codecogs.com/svg.image?W^T" title="W^T" />
+
+> <img src="https://latex.codecogs.com/svg.image?z\&space;=&space;\&space;X_1W_1&plus;X_2W_2&plus;X_3W_3&space;---------(1)\\W^T=\begin{bmatrix}&space;W_1&W_2&space;&space;&&space;W_3&space;\\\end{bmatrix}_{(nXm)},&space;X=\begin{bmatrix}&space;X_1\\X_2\\&space;X_3\end{bmatrix}_{(mXn)}" title="z\ = \ X_1W_1+X_2W_2+X_3W_3 \\W^T=\begin{bmatrix} W_1&W_2 & W_3 \\\end{bmatrix}_{(nXm)}, X=\begin{bmatrix} X_1\\X_2\\ X_3\end{bmatrix}_{(mXn)}" />
+
+> <img src="https://latex.codecogs.com/svg.image?\begin{bmatrix}W_1&space;\\W_2\\W_3\\\end{bmatrix}^{T}\begin{bmatrix}X_1&space;\\X_2\\X_3\\\end{bmatrix}&space;\&space;\&space;=\&space;\&space;W^TX" title="\begin{bmatrix}W_1 \\W_2\\W_3\\\end{bmatrix}^{T}\begin{bmatrix}X_1 \\X_2\\X_3\\\end{bmatrix} \ \ =\ \ W^TX" />
+
+### Derivation
+
+* We are taking theta as the thrisold value-
+> <img src="https://latex.codecogs.com/svg.image?\sigma(z)=\begin{cases}&plus;1\&space;\&space;\textit{if}\&space;\&space;\&space;z\geqslant&space;\theta&space;\\-1\&space;\&space;\textit{if}\&space;\&space;\&space;z<&space;\theta\end{cases}&space;" title="\sigma(z)=\begin{cases}+1\ \ \textit{if}\ \ \ z\geqslant \theta \\-1\ \ \textit{if}\ \ \ z< \theta\end{cases} " />
+
+* Changing RHS to LHS
+
+> <img src="https://latex.codecogs.com/svg.image?\sigma(z)=\begin{cases}&plus;1\&space;\&space;\textit{if}\&space;\&space;\&space;z-\theta\geqslant&space;0&space;\\-1\&space;\&space;\textit{if}\&space;\&space;\&space;z-&space;\theta<0\end{cases}" title="\sigma(z)=\begin{cases}+1\ \ \textit{if}\ \ \ z-\theta\geqslant 0 \\-1\ \ \textit{if}\ \ \ z- \theta<0\end{cases}" />
+
+* We are taking theta as W_0X_0 and W_0X_0 which is 'y intercept' or 'c' in y=mX+c
+
+> <img src="https://latex.codecogs.com/svg.image?\sigma(z)=\begin{cases}&plus;1\&space;\&space;\textit{if}\&space;\&space;\&space;W^TX&plus;bias\geqslant\&space;0\&space;\\-1\&space;\&space;\textit{if}\&space;\&space;\&space;W^TX&plus;bias<\&space;0\&space;\\\end{cases}" title="\sigma(z)=\begin{cases}+1\ \ \textit{if}\ \ \ W^TX+bias\geqslant\ 0\ \\-1\ \ \textit{if}\ \ \ W^TX+bias<\ 0\ \\\end{cases}" />
+
+#### Bias
+![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
+* In y=mX+c ,
+   * c or bias helps the **shifting** from +ve to -ve and vice versa so that the output is controlled.
+   * m or the slope helps the **rotation**.
+
+ <img src="https://user-images.githubusercontent.com/12748752/136802531-79edaea5-9b55-4ae2-b2c5-a2205e3fce31.png" width=50%>
 
 
 
+* Bias effects the output as the following it change the output class +ve to -ve.
+
+<img src="https://user-images.githubusercontent.com/12748752/136807286-303afa7c-d91e-4dae-94db-2ad88563fda7.png"  width=50%>
+
+#### Perceptron learning Rule or Update Weights
+![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
+
+<img src="https://sebastianraschka.com/images/faq/classifier-history/perceptron-figure.png" width=40%>
 
 
+> <img src="https://latex.codecogs.com/svg.image?w_{i,j}&space;\leftarrow&space;w_{i,j}&space;&plus;&space;\eta(y_j&space;-&space;\hat{y_j})x_i" title="w_{i,j} \leftarrow w_{i,j} + \eta(y_j - \hat{y_j})x_i" />
 
+
+* Where
+ >> <img src="https://latex.codecogs.com/svg.image?&space;w_{i,j}&space;\textrm{&space;:&space;connection&space;weight&space;between}&space;\&space;\&space;i^{th}&space;&space;\textrm{input&space;neuron&space;and&space;}&space;j^{th}&space;&space;\textrm{&space;output&space;neuron}" title=" w_{i,j} \textrm{ : connection weight between} \ \ i^{th} \textrm{input neuron and } j^{th} \textrm{ output neuron}" />
+ 
+ >> <img src="https://latex.codecogs.com/svg.image?x_i&space;:&space;i^{th}\textrm{&space;input&space;value}" title="x_i : i^{th}\textrm{ input value}" />
+ 
+ >> <img src="https://latex.codecogs.com/svg.image?\hat{y_j}&space;:&space;\textrm{output&space;of}&space;\&space;j^{th}\&space;\textrm{&space;output&space;}" title="\hat{y_j} : \textrm{output of} \ j^{th}\ \textrm{ output }" />
+ 
+ >> <img src="https://latex.codecogs.com/svg.image?y_j&space;:&space;\textrm{target&space;output&space;of}\&space;\&space;j^{th}&space;\textrm{&space;output&space;neuron}" title="y_j : \textrm{target output of}\ \ j^{th} \textrm{ output neuron}" />
+ 
+ >> <img src="https://latex.codecogs.com/svg.image?\eta&space;:&space;\textrm{learning&space;rate}" title="\eta : \textrm{learning rate}" />  
+
+
+* It can also be written as for jth element of w vector 
+ >> <img src="https://latex.codecogs.com/svg.image?w_j&space;=&space;w_j&space;&plus;&space;\triangle&space;w_j" title="w_j = w_j + \triangle w_j" />
+ 
+ >> <img src="https://latex.codecogs.com/svg.image?where,\&space;\triangle&space;w_j&space;=&space;&space;\eta(y^{(i)}&space;-&space;\hat{y_j}^{(i)})x_j^{(i)}" title="where,\ \triangle w_j = \eta(y^{(i)} - \hat{y_j}^{(i)})x_j^{(i)}" />
 
 
 
