@@ -4,7 +4,7 @@
    * [The Perceptron](#the-perceptron)
      * [Perceptron learning Rule or Update Weights](#perceptron-learning-rule-or-update-weights)
    * [Bias](#bias)
-* [Activation Function](#activation-function)
+* [Activation Function](https://github.com/iAmKankan/Deep-Learning/blob/master/activation.md)
    * [Sigmoid]()
 * [Optimizer]()
    * [Adams]()
