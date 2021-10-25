@@ -74,12 +74,17 @@
 
 
 
-* As we know error is **(_Predicted Value_ - _Acctual Value_)** 
-* A Neural Network back propagate and updates weights
-* But the update value for each input is not same as each input have different contribution to the final error.
-<img src="https://user-images.githubusercontent.com/12748752/138711107-3345c175-5d03-4b09-b8ad-0c0a517d74e6.png" weight=40%/>
+* As we know error is **(_Predicted Value_ - _Acctual Value_)** .
+* A Neural Network back propagate and updates weights.
+* Now, the question is What would be the update weight?
 
-<img src="https://user-images.githubusercontent.com/12748752/138711104-18be860b-4e6f-4baa-af73-c83f66853656.png" weight=40%/>
+<img src="https://user-images.githubusercontent.com/12748752/138711107-3345c175-5d03-4b09-b8ad-0c0a517d74e6.png" width=40%/>
+
+* The update value for each input is not same as each input weight has different contribution to the final error.
+* So the rectification of weight for each input would be different.
+
+
+<img src="https://user-images.githubusercontent.com/12748752/138711104-18be860b-4e6f-4baa-af73-c83f66853656.png" width=40%/>
 
 
 > <img src="https://latex.codecogs.com/svg.image?w_{i,j}&space;\leftarrow&space;w_{i,j}&space;&plus;&space;\eta(y_j&space;-&space;\hat{y_j})x_i" title="w_{i,j} \leftarrow w_{i,j} + \eta(y_j - \hat{y_j})x_i" />
