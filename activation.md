@@ -30,9 +30,25 @@
 ### Sigmoid
 ![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
 * A sigmoid function is a mathematical function having a characteristic "S"-shaped curve or sigmoid curve.
-* A common example of a sigmoid function is the logistic function shown in the first figure and defined by the formula- 
+* A common example of a sigmoid function is the logistic function.
+* The term "sigmoid function" is used as an alias for the logistic function.
 
-> <img src="https://latex.codecogs.com/svg.image?\mathit{S(x)}\&space;=&space;\&space;\frac{1}{1&plus;e^{-x}}" title="\mathit{S(x)}\ = \ \frac{1}{1+e^{-x}}" width=20% />
+
+#### The Sigmoid Curve
+![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
+
+ <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Logistic-curve.svg/480px-Logistic-curve.svg.png"/>
+ 
+#### The Sigmoid Formula
+![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
+
+<img src="https://latex.codecogs.com/svg.image?\mathit{S(x)}\&space;=&space;\&space;\frac{1}{1&plus;e^{-x}}" title="\mathit{S(x)}\ = \ \frac{1}{1+e^{-x}}" width=20% />
+
+#### Properties of Sigmoid function
+![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
+* As it produce value with rage between **0** and **1** it is computationally less intensive.
+* Converging the solution faster.
+<img src="https://latex.codecogs.com/svg.image?\begin{bmatrix}\textbf{Domain&space;for(input&space;range)}\&space;\&space;\sigma(x)&space;&&space;\textbf{Range&space;for(output&space;range)}&space;\&space;\&space;\sigma(x)&space;&space;\\&space;(-\infty,\infty)&space;&(0,1)&space;&space;\\&space;\end{bmatrix}&space;" title="\begin{bmatrix}\textbf{Domain for(input range)}\ \ \sigma(x) & \textbf{Range for(output range)} \ \ \sigma(x) \\ (-\infty,\infty) &(0,1) \\ \end{bmatrix} " />
 
 #### Derivative of the Sigmoid Activation function 
 ![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
