@@ -77,7 +77,7 @@
 > <img src="https://latex.codecogs.com/svg.image?w_{i,j}&space;\leftarrow&space;w_{i,j}&space;&plus;&space;\eta(y_j&space;-&space;\hat{y_j})x_i" title="w_{i,j} \leftarrow w_{i,j} + \eta(y_j - \hat{y_j})x_i" />
 
 
-> **Where** 
+> #### Where
 >> <img src="https://latex.codecogs.com/svg.image?&space;w_{i,j}&space;\textrm{&space;:&space;connection&space;weight&space;between}&space;\&space;\&space;i^{th}&space;&space;\textrm{input&space;neuron&space;and&space;}&space;j^{th}&space;&space;\textrm{&space;output&space;neuron}" title=" w_{i,j} \textrm{ : connection weight between} \ \ i^{th} \textrm{input neuron and } j^{th} \textrm{ output neuron}" />
 >
 >> <img src="https://latex.codecogs.com/svg.image?x_i&space;:&space;i^{th}\textrm{&space;input&space;value}" title="x_i : i^{th}\textrm{ input value}" />
