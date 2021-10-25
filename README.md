@@ -68,10 +68,18 @@
 
 <img src="https://user-images.githubusercontent.com/12748752/136807286-303afa7c-d91e-4dae-94db-2ad88563fda7.png"  width=50%>
 
-#### Perceptron learning Rule or Update Weights
+### Perceptron learning Rule or Update Weights and Errors
 ![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
-
 <img src="https://sebastianraschka.com/images/faq/classifier-history/perceptron-figure.png" width=40%>
+
+
+
+* As we know error is **(_Predicted Value_ - _Acctual Value_)** 
+* A Neural Network back propagate and updates weights
+* But the update value for each input is not same as each input have different contribution to the final error.
+<img src="https://user-images.githubusercontent.com/12748752/138711107-3345c175-5d03-4b09-b8ad-0c0a517d74e6.png" weight=40%/>
+
+<img src="https://user-images.githubusercontent.com/12748752/138711104-18be860b-4e6f-4baa-af73-c83f66853656.png" weight=40%/>
 
 
 > <img src="https://latex.codecogs.com/svg.image?w_{i,j}&space;\leftarrow&space;w_{i,j}&space;&plus;&space;\eta(y_j&space;-&space;\hat{y_j})x_i" title="w_{i,j} \leftarrow w_{i,j} + \eta(y_j - \hat{y_j})x_i" />
@@ -94,6 +102,8 @@
 >
 > <img src="https://latex.codecogs.com/svg.image?where,\&space;\triangle&space;w_j&space;=&space;&space;\eta(y^{(i)}&space;-&space;\hat{y_j}^{(i)})x_j^{(i)}" title="where,\ \triangle w_j = \eta(y^{(i)} - \hat{y_j}^{(i)})x_j^{(i)}" />.
 
+#### Update Weights can be written as
+><img src="https://latex.codecogs.com/svg.image?\\W=&space;W-\eta&space;\frac{\partial&space;e}{\partial&space;w}\\&space;\\\\\mathrm{Where,\&space;\&space;W\&space;=\&space;Weight,\&space;\&space;\eta\&space;=\&space;Learning&space;\&space;rate,\&space;\&space;\partial&space;e=Change&space;\&space;in\&space;error,&space;\&space;\&space;\partial&space;w=Change&space;\&space;in\&space;weight}&space;\\\mathrm{Here&space;\&space;\&space;-\eta&space;\frac{\partial&space;e}{\partial&space;w}\&space;\&space;=&space;\&space;\&space;\Delta&space;W,&space;\&space;\&space;\&space;From&space;\&space;the\&space;above&space;\&space;\&space;(W_j&plus;\Delta&space;W_j)}" title="\\W= W-\eta \frac{\partial e}{\partial w}\\ \\\\\mathrm{Where,\ \ W\ =\ Weight,\ \ \eta\ =\ Learning \ rate,\ \ \partial e=Change \ in\ error, \ \ \partial w=Change \ in\ weight} \\\mathrm{Here \ \ -\eta \frac{\partial e}{\partial w}\ \ = \ \ \Delta W, \ \ \ From \ the\ above \ \ (W_j+\Delta W_j)}" />
 
 
 #### Perceptron error Update Weights
