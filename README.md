@@ -71,11 +71,10 @@
 ### Perceptron learning Rule or Update Weights and Errors
 ![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
 <img src="https://sebastianraschka.com/images/faq/classifier-history/perceptron-figure.png" width=40%>
-
-
-
 * As we know error is **(_Predicted Value_ - _Acctual Value_)** .
-* A Neural Network back propagate and updates weights.
+* A Neural Network back propagate and updates **Weights** and **Bias**.
+
+
 * Now, the question is What would be the update weight?
 
 <img src="https://user-images.githubusercontent.com/12748752/138711107-3345c175-5d03-4b09-b8ad-0c0a517d74e6.png" width=40%/>
@@ -111,14 +110,31 @@
 ><img src="https://latex.codecogs.com/svg.image?\\W=&space;W-\eta&space;\frac{\partial&space;e}{\partial&space;w}\\&space;\\\\\mathrm{Where,\&space;\&space;W\&space;=\&space;Weight,\&space;\&space;\eta\&space;=\&space;Learning&space;\&space;rate,\&space;\&space;\partial&space;e=Change&space;\&space;in\&space;error,&space;\&space;\&space;\partial&space;w=Change&space;\&space;in\&space;weight}&space;\\\mathrm{Here&space;\&space;\&space;-\eta&space;\frac{\partial&space;e}{\partial&space;w}\&space;\&space;=&space;\&space;\&space;\Delta&space;W,&space;\&space;\&space;\&space;From&space;\&space;the\&space;above&space;\&space;\&space;(W_j&plus;\Delta&space;W_j)}" title="\\W= W-\eta \frac{\partial e}{\partial w}\\ \\\\\mathrm{Where,\ \ W\ =\ Weight,\ \ \eta\ =\ Learning \ rate,\ \ \partial e=Change \ in\ error, \ \ \partial w=Change \ in\ weight} \\\mathrm{Here \ \ -\eta \frac{\partial e}{\partial w}\ \ = \ \ \Delta W, \ \ \ From \ the\ above \ \ (W_j+\Delta W_j)}" />
 
 
-#### Perceptron error Update Weights
+### Neural Network error Update Weights
+![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
+* Suppose we have a Neural Network with three input two hidden layers and we are using sigmoid as a activation function inside the hidden layer as well as in final weight calculation.
+<img src="https://user-images.githubusercontent.com/12748752/138762029-20fc6d46-e47c-4131-b1d3-9ce33a3595af.png" width=50%/>
 
+* **Input buffers**(that's why not having Bias, Input neuron would have Bias), **Hidden layers**, **Output Neuron** are like
+><img src="https://latex.codecogs.com/svg.image?\\\mathrm{Input\&space;Buffer=\&space;}X_1,\&space;X_2,\&space;X_3&space;\&space;(No\&space;Bias,\&space;Input\&space;Neuron\&space;would\&space;have\&space;Bias)\\\mathrm{Weight&space;=\&space;W_{i&space;j}^{(z)}&space;\&space;(\&space;i=\&space;the&space;\&space;destination,\&space;j=\&space;the&space;\&space;source,\&space;z=\&space;location\&space;number)}&space;\\\mathrm{Bias=&space;\&space;b_i}&space;\\\mathrm{Weight&space;\&space;Summation=&space;\&space;Z_i^{(z)}(i=\&space;Hidden&space;\&space;or\&space;output\&space;neuron&space;\&space;number,\&space;z=\&space;location)}\\\mathrm{Activation&space;\&space;function=&space;\&space;a_i^{(z)}(i=\&space;Hidden&space;\&space;or\&space;output\&space;neuron&space;\&space;number,\&space;z=\&space;location)}&space;\\\widehat{Y}=\mathrm{\&space;Final\&space;output}&space;" title="\\\mathrm{Input\ Buffer=\ }X_1,\ X_2,\ X_3 \ (No\ Bias,\ Input\ Neuron\ would\ have\ Bias)\\\mathrm{Weight =\ W_{i j}^{(z)} \ (\ i=\ the \ destination,\ j=\ the \ source,\ z=\ location\ number)} \\\mathrm{Bias= \ b_i} \\\mathrm{Weight \ Summation= \ Z_i^{(z)}(i=\ Hidden \ or\ output\ neuron \ number,\ z=\ location)}\\\mathrm{Activation \ function= \ a_i^{(z)}(i=\ Hidden \ or\ output\ neuron \ number,\ z=\ location)} \\\widehat{Y}=\mathrm{\ Final\ output} " width=80% />
 
+* Hidden Layer weight calculation
 
+<img src="https://user-images.githubusercontent.com/12748752/138760860-1056cc68-b17d-4c8e-abd8-1d8e35ad72f7.png" width=50%/>
 
+* Final layer weight calculation
+ 
+<img src="https://user-images.githubusercontent.com/12748752/138760858-246fe6ec-c1f8-4807-821b-abeb18e08493.png" width=50%/>
 
+* Weight and Bias update rule-
+<img src="https://user-images.githubusercontent.com/12748752/138770072-79bdc601-ef95-4d6e-8bfb-03b6fa95f821.png" width=50%>
 
-
+#### Matrix representation of above diagrams
+![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
+* Calculationin **Hidden layers**
+> <img src="https://latex.codecogs.com/svg.image?\\\mathrm{\&space;\begin{bmatrix}&space;W_{11}&W_{12}&space;&&space;W_{13}&space;\\&space;W_{21}&&space;W_{22}&space;&W_{23}&space;\\\end{bmatrix}_{(2X3)}*&space;\begin{bmatrix}&space;X_{1}&space;\\&space;X_{2}&space;\\X_{3}&space;\\\end{bmatrix}_{(3X1)}&space;&plus;&space;\begin{bmatrix}&space;b_{1}&space;\\&space;b_{2}&space;\\\end{bmatrix}&space;=&space;\\&space;&space;\begin{bmatrix}&space;Z_{1}&space;\\&space;Z_{2}&space;\\\end{bmatrix}\to&space;\begin{bmatrix}&space;activation(Z_{1})&space;\\&space;activation(Z_{2})&space;\\\end{bmatrix}\to&space;\begin{bmatrix}&space;a_{1}&space;\\&space;a_{2}&space;\\\end{bmatrix}&space;or\&space;\widehat{Y}&space;}" title="\\\mathrm{\ \begin{bmatrix} W_{11}&W_{12} & W_{13} \\ W_{21}& W_{22} &W_{23} \\\end{bmatrix}_{(2X3)}* \begin{bmatrix} X_{1} \\ X_{2} \\X_{3} \\\end{bmatrix}_{(3X1)} + \begin{bmatrix} b_{1} \\ b_{2} \\\end{bmatrix} = \\ \begin{bmatrix} Z_{1} \\ Z_{2} \\\end{bmatrix}\to \begin{bmatrix} activation(Z_{1}) \\ activation(Z_{2}) \\\end{bmatrix}\to \begin{bmatrix} a_{1} \\ a_{2} \\\end{bmatrix} or\ \widehat{Y} }" width=80%/>
+* Calculation in **Output layer**
+> <img src="https://latex.codecogs.com/svg.image?\\\mathrm{\&space;\begin{bmatrix}&space;W_{11}&W_{12}&space;\\\end{bmatrix}_{(1X2)}*&space;\begin{bmatrix}&space;a_{1}&space;\\&space;a_{2}&space;\end{bmatrix}_{(2X1)}&space;&plus;&space;\begin{bmatrix}&space;b_{1}&space;\\\end{bmatrix}&space;=&space;\\&space;&space;\begin{bmatrix}&space;Z_{1}&space;\\\end{bmatrix}\to&space;\begin{bmatrix}&space;activation(Z_{1})&space;&space;\\\end{bmatrix}\to&space;\begin{bmatrix}&space;a_{1}&space;\\\end{bmatrix}&space;or\&space;\widehat{Y}&space;}" title="\\\mathrm{\ \begin{bmatrix} W_{11}&W_{12} \\\end{bmatrix}_{(1X2)}* \begin{bmatrix} a_{1} \\ a_{2} \end{bmatrix}_{(2X1)} + \begin{bmatrix} b_{1} \\\end{bmatrix} = \\ \begin{bmatrix} Z_{1} \\\end{bmatrix}\to \begin{bmatrix} activation(Z_{1}) \\\end{bmatrix}\to \begin{bmatrix} a_{1} \\\end{bmatrix} or\ \widehat{Y} }" />
 
 ## What are Neural networks?
 Neural networks are set of algorithms inspired by the functioning of human brian. Generally when you open your eyes, what you see is called data and is processed by the Nuerons(data processing cells) in your brain, and recognises what is around you. That’s how similar the Neural Networks works. They takes a large set of data, process the data(draws out the patterns from data), and outputs what it is.
