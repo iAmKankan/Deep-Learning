@@ -6,8 +6,17 @@
    * [Bias](#bias)
 * [Activation Function](https://github.com/iAmKankan/Deep-Learning/blob/master/activation.md)
    * [Sigmoid]()
-* [Optimizer]()
-   * [Adams]()
+* [Optimizer](https://github.com/iAmKankan/Deep-Learning/blob/master/optimizer.md)
+   * [Gradient Descent](https://github.com/iAmKankan/Deep-Learning/blob/master/gradient-descent.md)
+   * [Stochastic Gradient Descent](#)
+   * [Minibatch Stochastic Gradient Descent](#)
+   * [Momentum](#)
+   * [Adagrad](#)
+   * [RMSProp](#)
+   * [Adadelta](#)
+   * [Adam](#)
+   * [Learning Rate Scheduling](#)
+
 ## Deep Learning
 ![dark](https://user-images.githubusercontent.com/12748752/136656705-67e1f667-b192-4ce3-a95a-97dc1b982fd8.png)
 * Deep learning is a more approachable name for an artificial neural network. 
