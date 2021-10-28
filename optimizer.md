@@ -1,5 +1,3 @@
-![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
-![dark](https://user-images.githubusercontent.com/12748752/136802585-2ef5b7ff-ddbc-417f-b963-ca233db3ded1.png)
 ## Index
 ![dark](https://user-images.githubusercontent.com/12748752/136802585-2ef5b7ff-ddbc-417f-b963-ca233db3ded1.png)
 * [Optimization](#optimization)
@@ -19,7 +17,23 @@
    * [Vanishing Gradients](#)
 ## Optimization 
 ![dark](https://user-images.githubusercontent.com/12748752/136802585-2ef5b7ff-ddbc-417f-b963-ca233db3ded1.png)
-* Optimizers are algorithms or methods used to change the attributes of the neural network such as **weights**, **Bias** and **learning rate** to reduce the losses. 
+* In Statistics, Machine Learning and other Data Science fields, we optimize a lot of stuff.
+> #### Linear Regression we optimize
+> *  _**Intercept**_ 
+> *  _**Slope**_
+<img src="https://user-images.githubusercontent.com/12748752/139344656-8e5f34a2-608d-45d5-90a9-0dc4676692e9.png" width=30%>
+
+> #### When we use Logistic Regression we optimize 
+> * _**A Squiggle**_
+<img src="https://user-images.githubusercontent.com/12748752/139344662-2edb7ae2-2ee9-43d0-9bec-5d099e62bce5.png" width=30%>
+
+> #### When we use t-SNE we optimize 
+> * _**Clusters**_
+
+### In Neural Network
+![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
+
+* In Deep Learning optimizers are algorithms or methods used to change the attributes of the neural network such as **weights**, **Bias** and **learning rate** to reduce the losses. 
 > <img src="https://latex.codecogs.com/svg.image?\\&space;W\&space;=\&space;W\&space;&plus;&space;\&space;\Delta&space;W&space;\\b\&space;=\&space;W\&space;&plus;&space;\&space;\Delta&space;b&space;\\&space;\Delta&space;W\&space;=\&space;-\eta&space;\nabla&space;c\&space;;\&space;\mathrm{[\eta=\&space;Learning\&space;rate,&space;\nabla&space;c=\&space;minimizing\&space;error&space;]}&space;\\&space;\\\Delta&space;W\&space;=\&space;-\eta&space;\frac{\partial&space;c}{\partial&space;w}&space;\&space;\mathrm{[Gredient\&space;Descent&space;]}" title="\\ W\ =\ W\ + \ \Delta W \\b\ =\ W\ + \ \Delta b \\ \Delta W\ =\ -\eta \nabla c\ ;\ \mathrm{[\eta=\ Learning\ rate, \nabla c=\ minimizing\ error ]} \\ \\\Delta W\ =\ -\eta \frac{\partial c}{\partial w} \ \mathrm{[Gredient\ Descent ]}" />
 
 * Optimizers are used to solve optimization problems by minimizing the function.
