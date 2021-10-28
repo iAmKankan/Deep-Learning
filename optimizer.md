@@ -5,14 +5,14 @@
 * [Optimization](#optimization)
 * [Types of Optimizer](#types-of-optimizer)
    * [Gradient Descent](https://github.com/iAmKankan/Deep-Learning/blob/master/gradient-descent.md)
-   * [Stochastic Gradient Descent]
-   * [Minibatch Stochastic Gradient Descent]
-   * [Momentum]
-   * [Adagrad]
-   * [RMSProp]
-   * [Adadelta]
-   * [Adam]
-   * [Learning Rate Scheduling]
+   * [Stochastic Gradient Descent](#)
+   * [Minibatch Stochastic Gradient Descent](#)
+   * [Momentum](#)
+   * [Adagrad](#)
+   * [RMSProp](#)
+   * [Adadelta](#)
+   * [Adam](#)
+   * [Learning Rate Scheduling](#)
 * [Optimization Challenges in Deep Learning](#challenges)
    * [Local Minima](#)
    * [Saddle Points](#)
