@@ -31,6 +31,12 @@
 >
 > * **Iteration 2**
 >><img src="https://latex.codecogs.com/svg.image?\\X_2&space;=\&space;X_1&space;-\&space;\&space;(learning\&space;rate)\&space;\ast&space;\&space;\&space;\frac{\mathrm{d}&space;y}{\mathrm{d}&space;x}&space;\\X_2&space;=\&space;(-3.04)&space;-\&space;\&space;(0.01)\&space;\ast&space;\&space;\&space;(2&space;\ast(--3.04&plus;5)&space;)\\&space;X_2&space;=\&space;-3.0792&space;" title="\\X_2 =\ X_1 -\ \ (learning\ rate)\ \ast \ \ \frac{\mathrm{d} y}{\mathrm{d} x} \\X_2 =\ (-3.04) -\ \ (0.01)\ \ast \ \ (2 \ast(--3.04+5) )\\ X_2 =\ -3.0792 " />
+>
+> * ...
+> >........
+> 
+> * **Iteration n**
+>> <img src="https://latex.codecogs.com/svg.image?X_n&space;=\&space;-5.0" title="X_n =\ -5.0" />
 
 * The itaration would be continued till the result reached the global minima.
 * For the above example the Global Minima is **X=-5**
