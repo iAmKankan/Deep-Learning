@@ -59,5 +59,16 @@
 * In Deep Learning after calculationg weights  
 
 
+## Optimization Challenges in Deep Learning
+![dark](https://user-images.githubusercontent.com/12748752/136802585-2ef5b7ff-ddbc-417f-b963-ca233db3ded1.png)
+* Here, we are going to focus specifically on the performance of optimization algorithms in minimizing the objective function, rather than a model’s generalization error.
+> * There are a clear distinguish between **analytical solutions** and **numerical solutions** in optimization problems. 
+* In deep learning, most objective functions are complicated and do not have analytical solutions.
+* The optimization algorithms all fall into **numerical optimization algorithms**.
 
-
+> #### There are many challenges in deep learning optimization. Some of the most vexing ones are-
+>> local minima
+>>
+>> saddle points
+>> 
+>> vanishing gradients
