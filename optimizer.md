@@ -1,6 +1,8 @@
 ## Index
 ![dark](https://user-images.githubusercontent.com/12748752/136802585-2ef5b7ff-ddbc-417f-b963-ca233db3ded1.png)
 * [Optimization](#optimization)
+* [### Goal of Optimization](#goal-of-optimization)
+* [Training Error Optimization](#training-error-optimization)
 * [Types of Optimizer](#types-of-optimizer)
    * [Gradient Descent](https://github.com/iAmKankan/Deep-Learning/blob/master/gradient-descent.md)
    * [Stochastic Gradient Descent](#)
@@ -29,8 +31,21 @@
 
 > #### When we use t-SNE we optimize 
 > * _**Clusters**_
+### Goal of Optimization
+![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
 
-### In Neural Network
+> #### **The goal of Optimization is primarily concerned with minimizing an objective(loss function)**
+> * The goal of optimization is to reduce the _**Training Error**_.
+
+
+> #### **The goal of Deep Learning is finding a suitable model, given a finite amount of data.**
+> * The goal of deep learning (or more broadly, statistical inference) is to reduce the _**Generalization Error**_. 
+> * To accomplish so we need to pay attention to **overfitting** in addition to using the **optimization algorithm** to reduce the training error.
+
+* **Empirical Risk:** The empirical risk is an average loss on the training dataset.
+*  **Risk:**: The risk is the expected loss on the entire population of data. 
+
+### Training Error Optimization
 ![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
 
 * In Deep Learning optimizers are algorithms or methods used to change the attributes of the neural network such as **weights**, **Bias** and **learning rate** to reduce the losses. 
@@ -42,3 +57,7 @@
 * Once we have the loss function, we can use an optimization algorithm in attempt to minimize the loss.
 * In optimization, a loss function is often referred to as the *objective function* of the optimization problem. 
 * In Deep Learning after calculationg weights  
+
+
+
+
