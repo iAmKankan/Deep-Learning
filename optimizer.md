@@ -34,11 +34,11 @@
 ### Goal of Optimization
 ![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
 
-> #### **The goal of Optimization is primarily concerned with minimizing an objective(loss function)**
+> ### **The goal of Optimization is primarily concerned with minimizing an objective(loss function)**
 > * The goal of optimization is to reduce the _**Training Error**_.
 
 
-> #### **The goal of Deep Learning is finding a suitable model, given a finite amount of data.**
+> ### **The goal of Deep Learning is finding a suitable model, given a finite amount of data.**
 > * The goal of deep learning (or more broadly, statistical inference) is to reduce the _**Generalization Error**_. 
 > * To accomplish so we need to pay attention to **overfitting** in addition to using the **optimization algorithm** to reduce the training error.
 
@@ -66,7 +66,7 @@
 * In deep learning, most objective functions are complicated and do not have analytical solutions.
 * The optimization algorithms all fall into **numerical optimization algorithms**.
 
-> #### There are many challenges in deep learning optimization. Some of the most vexing ones are-
+> ### There are many challenges in deep learning optimization. Some of the most vexing ones are-
 >> local minima
 >>
 >> saddle points
