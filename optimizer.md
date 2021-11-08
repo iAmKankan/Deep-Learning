@@ -1,7 +1,7 @@
 ## Index
 ![dark](https://user-images.githubusercontent.com/12748752/136802585-2ef5b7ff-ddbc-417f-b963-ca233db3ded1.png)
 * [Optimization](#optimization)
-* [### Goal of Optimization](#goal-of-optimization)
+* [Goal of Optimization](#goal-of-optimization)
 * [Training Error Optimization](#training-error-optimization)
 * [Types of Optimizer](#types-of-optimizer)
    * [Gradient Descent](https://github.com/iAmKankan/Deep-Learning/blob/master/gradient-descent.md)
