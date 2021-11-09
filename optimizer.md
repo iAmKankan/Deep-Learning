@@ -62,13 +62,34 @@
 ## Optimization Challenges in Deep Learning
 ![dark](https://user-images.githubusercontent.com/12748752/136802585-2ef5b7ff-ddbc-417f-b963-ca233db3ded1.png)
 * Here, we are going to focus specifically on the performance of optimization algorithms in minimizing the objective function, rather than a model’s generalization error.
-> * There are a clear distinguish between **analytical solutions** and **numerical solutions** in optimization problems. 
+> #### There are a clear difference between **analytical solutions** and **numerical solutions** in optimization problems. 
 * In deep learning, most objective functions are complicated and do not have analytical solutions.
 * The optimization algorithms all fall into **numerical optimization algorithms**.
 
-> ### There are many challenges in deep learning optimization. Some of the most vexing ones are-
+> #### There are many challenges in deep learning optimization. Some of the most vexing ones are-
 >> local minima
 >>
 >> saddle points
 >> 
 >> vanishing gradients
+
+###  Local Minima
+![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
+* For any objective function  _f(x)_ , if the value of  _f(x)_  at  _x_  is smaller than the **values** of  *f(x)*  **at any other points in the vicinity of  x**. 
+* Then  f(x)  could be a local minimum. 
+* [A function _f(x)_ has a local minima at <img src="https://latex.codecogs.com/svg.image?\mathrm{x_0}" title="\mathrm{x_0}" />, if the value of <img src="https://latex.codecogs.com/svg.image?f(\mathrm{x_0})" title="f(\mathrm{x_0})" /> is smaller than the other values of *f*(x) of different points of x]
+
+* If the value of  f(x)  at  x  is the minimum of the objective function over the entire domain, then  f(x)  is the global minimum.
+![](https://d2l.ai/_images/output_optimization-intro_70d214_45_0.svg)
+
+
+
+
+
+
+
+
+
+
+
+
