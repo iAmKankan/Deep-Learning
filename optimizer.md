@@ -82,14 +82,30 @@
 * If the value of  f(x)  at  x  is the minimum of the objective function over the entire domain, then  f(x)  is the global minimum.
 ![](https://d2l.ai/_images/output_optimization-intro_70d214_45_0.svg)
 
+* The objective function of deep learning models usually has many local optima. 
+* When the numerical solution of an optimization problem is near the local optimum, the numerical solution obtained by the final iteration may only minimize the objective function *locally*, rather than *globally*, as the gradient of the objective function's solutions approaches or becomes zero.
+* Only some degree of noise might knock the parameter out of the local minimum.
+* In fact, this is one of the beneficial properties of minibatch stochastic gradient descent where the natural variation of gradients over minibatches is able to dislodge the parameters from local minima.
 
 
+### Saddle Points
+![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
+* Besides local minima, saddle points are another reason for gradients to vanish.
+* A saddle point is any location where all gradients of a function vanish but which is neither a global nor a local minimum. 
 
 
+### Vanishing Gradients
+![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
+* Probably the most insidious problem to encounter is the vanishing gradient.
+* Recall our commonly-used activation functions and their derivatives in Section 4.1.2. For instance, assume that we want to minimize the function  f(x)=tanh(x)  and we happen to get started at  x=4 .
+* As we can see, the gradient of  f  is close to nil. More specifically,  f′(x)=1−tanh2(x)  and thus  f′(4)=0.0013 .
 
-
-
-
+### Summary
+![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
+* Minimizing the training error does *not* guarantee that we find the best set of parameters to minimize the generalization error.
+* The optimization problems may have many local minima.
+* The problem may have even more saddle points, as generally the problems are not convex.
+* Vanishing gradients can cause optimization to stall. Often a reparameterization of the problem helps. Good initialization of the parameters can be beneficial, too.
 
 
 
