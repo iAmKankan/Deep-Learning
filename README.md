@@ -34,8 +34,11 @@
 * Its the simplest ANN architecture. It was invented by Frank Rosenblatt in 1957 and published as `Rosenblatt, Frank (1958), The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain, Cornell Aeronautical Laboratory, Psychological Review, v65, No. 6, pp. 386–408. doi:10.1037/h0042519`
  
 * Lets see the architecture shown below - 
-    
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ArtificialNeuronModel_english.png/1024px-ArtificialNeuronModel_english.png" width=40%> 
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ArtificialNeuronModel_english.png/1024px-ArtificialNeuronModel_english.png" width=60%> 
+  <br><ins><b><i>Perceptron </i></b></ins>
+</p>
+
 * Common activation functions used for Perceptrons are (with threshold at 0)- 
 <img src="https://latex.codecogs.com/svg.image?step(z)\&space;or\&space;heaviside(z)&space;=\begin{cases}0&space;&&space;z<0\\&space;1&space;&&space;z\geq&space;0\end{cases}&space;" title="step(z)\ or\ heaviside(z) =\begin{cases}0 & z<0\\ 1 & z\geq 0\end{cases} " />
 
