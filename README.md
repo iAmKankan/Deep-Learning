@@ -148,22 +148,23 @@ $$\Large \sigma(z) = \begin{cases}
   <img src="https://user-images.githubusercontent.com/12748752/138711104-18be860b-4e6f-4baa-af73-c83f66853656.png" width=40%/>
 </p>
 
-> <img src="https://latex.codecogs.com/svg.image?w_{i,j}&space;\leftarrow&space;w_{i,j}&space;&plus;&space;\eta(y_j&space;-&space;\hat{y_j})x_i" title="w_{i,j} \leftarrow w_{i,j} + \eta(y_j - \hat{y_j})x_i" />
+$$\Large{\color{Purple}w_{i,j} \leftarrow w_{i,j} + \eta(y_j - \hat{y_j})x_i}$$
 
+#### Where: 
+$$\Large{\color{Purple}\begin{matrix*}[l]
+w_{i,j} &:& \textrm{connection weight between} \ \ i^{th} \textrm{ input neuron and } j^{th} \textrm{ output neuron} \\
+x_i &:& i^{th}\textrm{ input value} \\
+\hat{y_j} &:& \textrm{output of } \ j^{th}\ \textrm{ output } \\
+y_j &:& \textrm{target output of }\ \ j^{th} \textrm{ output neuron} \\
+\eta &:& \textrm{learning rate}
+\end{matrix*}}$$
 
-#### Where
-> 
->> <img src="https://latex.codecogs.com/svg.image?&space;w_{i,j}&space;\textrm{&space;:&space;connection&space;weight&space;between}&space;\&space;\&space;i^{th}&space;&space;\textrm{input&space;neuron&space;and&space;}&space;j^{th}&space;&space;\textrm{&space;output&space;neuron}" title=" w_{i,j} \textrm{ : connection weight between} \ \ i^{th} \textrm{input neuron and } j^{th} \textrm{ output neuron}" />.  
->>
->> <img src="https://latex.codecogs.com/svg.image?x_i&space;:&space;i^{th}\textrm{&space;input&space;value}" title="x_i : i^{th}\textrm{ input value}" />.
->>
->> <img src="https://latex.codecogs.com/svg.image?\hat{y_j}&space;:&space;\textrm{output&space;of}&space;\&space;j^{th}\&space;\textrm{&space;output&space;}" title="\hat{y_j} : \textrm{output of} \ j^{th}\ \textrm{ output }" />.
->>
->> <img src="https://latex.codecogs.com/svg.image?y_j&space;:&space;\textrm{target&space;output&space;of}\&space;\&space;j^{th}&space;\textrm{&space;output&space;neuron}" title="y_j : \textrm{target output of}\ \ j^{th} \textrm{ output neuron}" />.
->>
->> <img src="https://latex.codecogs.com/svg.image?\eta&space;:&space;\textrm{learning&space;rate}" title="\eta : \textrm{learning rate}" />.  
+#### It can also be written as for jth element of w vector 
+$$\Large{\color{Purple}\begin{matrix*}[l]
+w_j = w_j + \nabla w_j\\
+where,\ \triangle w_j = \eta(y^{(i)} - \hat{y_j}^{(i)})x_j^{(i)}
+\end{matrix*}}$$
 
-> #### It can also be written as for jth element of w vector 
 > <img src="https://latex.codecogs.com/svg.image?w_j&space;=&space;w_j&space;&plus;&space;\triangle&space;w_j" title="w_j = w_j + \triangle w_j" />.
 >
 > <img src="https://latex.codecogs.com/svg.image?where,\&space;\triangle&space;w_j&space;=&space;&space;\eta(y^{(i)}&space;-&space;\hat{y_j}^{(i)})x_j^{(i)}" title="where,\ \triangle w_j = \eta(y^{(i)} - \hat{y_j}^{(i)})x_j^{(i)}" />.
