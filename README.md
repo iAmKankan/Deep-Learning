@@ -42,8 +42,8 @@ Lets see the architecture shown below -
 <!--- img src="https://latex.codecogs.com/svg.image?step(z)\&space;or\&space;heaviside(z)&space;=\begin{cases}0&space;&&space;z<0\\&space;1&space;&&space;z\geq&space;0\end{cases}&space;" title="step(z)\ or\ heaviside(z) =\begin{cases}0 & z<0\\ 1 & z\geq 0\end{cases} " --->
 
 $$\Large step(z) = \left \\{ \begin{matrix}
-0 & z<0\\
-1 & z\geq 0
+0 & z< \theta\\
+1 & z\geq \theta
 \end{matrix} \right.$$
 
 <!--- <img src="https://latex.codecogs.com/svg.image?z\&space;=&space;\&space;X_1W_1&plus;X_2W_2&plus;X_3W_3&space;\&space;\&space;\textit{,&space;or&space;we&space;can&space;write&space;it&space;as&space;}\&space;\&space;\&space;z\&space;=&space;\&space;\sum_{i=1}^{n}&space;X_iW_i&space;&space;" title="z\ = \ X_1W_1+X_2W_2+X_3W_3 \ \ \textit{, or we can write it as }\ \ \ z\&space;=&space;\&space;\sum_{i=1}^{n} X_iW_i &space;" width=70% /> --->
@@ -58,16 +58,18 @@ z &=& \sum\limits_{i=1}^{n} X_iW_i\\
 #### If we want to multiply W and X we will end up with two matrices-
 * For multiplication of 2 matrices we need to have 1<sup>st</sup> matrix **column**= 2<sup>nd</sup> matrix **row**. That's why we take transpose of matrix W to W<sup>T</sup>.
   
-$$\Large z\ = \ X_1W_1+X_2W_2+X_3W_3 \tag 1$$
+$$\Large z\ = \ X_1W_1+X_2W_2+X_3W_3 \tag 1 $$
 
-$$\Large W^{\top} = \begin{bmatrix*}[l]  W_1&W_2 & W_3 \end{bmatrix*}_{n\times m} \hspace{20pt} X =
+$$\large \begin{matrix*}[l]
+\\
+\\
+ W^{\top} = \begin{bmatrix*}[l]  W_1&W_2 & W_3 \end{bmatrix*}_{n\times m} \hspace{20pt} X =
 \begin{bmatrix}
 X_1\\
 X_2\\
 X_3\\
-\end{bmatrix}\_{m \times n} $$
-
-$$\Large \begin{bmatrix*}[l]  W_1 \\
+\end{bmatrix}\_{m \times n} \\
+ \begin{bmatrix*}[l]  W_1 \\
 W_2 \\
 W_3 \\ 
 \end{bmatrix*}
@@ -76,7 +78,8 @@ W_3 \\
 X_1\\
 X_2\\
 X_3\\
-\end{bmatrix} = W^{\top} X$$
+\end{bmatrix} = W^{\top} X
+\end{matrix*}$$
 
 
 ### Derivation
