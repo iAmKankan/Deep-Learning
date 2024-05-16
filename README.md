@@ -84,20 +84,31 @@ X_3\\
 
 ### Derivation
 
-* We are taking theta as the thrisold value-
-> <img src="https://latex.codecogs.com/svg.image?\sigma(z)=\begin{cases}&plus;1\&space;\&space;\textit{if}\&space;\&space;\&space;z\geqslant&space;\theta&space;\\-1\&space;\&space;\textit{if}\&space;\&space;\&space;z<&space;\theta\end{cases}&space;" title="\sigma(z)=\begin{cases}+1\ \ \textit{if}\ \ \ z\geqslant \theta \\-1\ \ \textit{if}\ \ \ z< \theta\end{cases} " />
+* We are taking theta $\large \theta$ as the **thrisold** value-
 
-* Changing RHS to LHS
+$$\Large \sigma(z) = \begin{cases}
++1 & if & z\geq \theta\\
+-1 & if & z < \theta\\
+\end{cases}$$  
 
-> <img src="https://latex.codecogs.com/svg.image?\sigma(z)=\begin{cases}&plus;1\&space;\&space;\textit{if}\&space;\&space;\&space;z-\theta\geqslant&space;0&space;\\-1\&space;\&space;\textit{if}\&space;\&space;\&space;z-&space;\theta<0\end{cases}" title="\sigma(z)=\begin{cases}+1\ \ \textit{if}\ \ \ z-\theta\geqslant 0 \\-1\ \ \textit{if}\ \ \ z- \theta<0\end{cases}" />
+* Changing **RHS** to **LHS**
 
-* We are taking theta as W_0X_0 and W_0X_0 which is 'y intercept' or 'c' in y=mX+c
+$$\Large \sigma(z) = \begin{cases}
++1 & if & z - \theta \geq 0\\
+-1 & if & z - \theta < 0\\
+\end{cases}$$  
 
-> <img src="https://latex.codecogs.com/svg.image?\sigma(z)=\begin{cases}&plus;1\&space;\&space;\textit{if}\&space;\&space;\&space;W^TX&plus;bias\geqslant\&space;0\&space;\\-1\&space;\&space;\textit{if}\&space;\&space;\&space;W^TX&plus;bias<\&space;0\&space;\\\end{cases}" title="\sigma(z)=\begin{cases}+1\ \ \textit{if}\ \ \ W^TX+bias\geqslant\ 0\ \\-1\ \ \textit{if}\ \ \ W^TX+bias<\ 0\ \\\end{cases}" />
+
+
+* We are taking theta as $W_0X_0$ and $W_0X_0$ which is '**y intercept**' or '**c**' in **y=mX+c**
+$$\Large \sigma(z) = \begin{cases}
++1 & if & W^{\top}X+bias \geq 0\\
+-1 & if & W^{\top}X+bias < 0\\
+\end{cases}$$  
 
 #### Bias
 ![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
-* In y=mX+c ,
+* In $y=mX+c$ ,
    * c or bias helps the **shifting** from +ve to -ve and vice versa so that the output is controlled.
    * m or the slope helps the **rotation**.
 
@@ -107,7 +118,7 @@ X_3\\
 
 * Bias effects the output as the following it change the output class +ve to -ve.
 
-<img src="https://user-images.githubusercontent.com/12748752/136807286-303afa7c-d91e-4dae-94db-2ad88563fda7.png"  width=50%>
+<img src="https://user-images.githubusercontent.com/12748752/136807286-303afa7c-d91e-4dae-94db-2ad88563fda7.png"  width=40%>
 
 ### Perceptron learning Rule or Update Weights and Errors
 ![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
