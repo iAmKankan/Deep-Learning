@@ -127,7 +127,7 @@ $$\Large \sigma(z) = \begin{cases}
 ![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
 
 <p align="center">
-  <img src="https://sebastianraschka.com/images/faq/classifier-history/perceptron-figure.png" width=40%>
+  <img src="https://sebastianraschka.com/images/faq/classifier-history/perceptron-figure.png" width=50%>
 </p>
 
 * As we know error is **(_Predicted Value_ - _Acctual Value_)** .
@@ -161,17 +161,22 @@ y_j &:& \textrm{target output of }\ \ j^{th} \textrm{ output neuron} \\
 
 #### It can also be written as for jth element of w vector 
 $$\Large{\color{Purple}\begin{matrix*}[l]
-w_j = w_j + \nabla w_j\\
-where,\ \triangle w_j = \eta(y^{(i)} - \hat{y_j}^{(i)})x_j^{(i)}
-\end{matrix*}}$$
-
-> <img src="https://latex.codecogs.com/svg.image?w_j&space;=&space;w_j&space;&plus;&space;\triangle&space;w_j" title="w_j = w_j + \triangle w_j" />.
->
-> <img src="https://latex.codecogs.com/svg.image?where,\&space;\triangle&space;w_j&space;=&space;&space;\eta(y^{(i)}&space;-&space;\hat{y_j}^{(i)})x_j^{(i)}" title="where,\ \triangle w_j = \eta(y^{(i)} - \hat{y_j}^{(i)})x_j^{(i)}" />.
+w_j & = w_j + \Delta w_j\\
+& \large where,\ \Delta w_j = \eta(y^{(i)} - \hat{y_j}^{(i)})x_j^{(i)}
+\end{matrix*} }$$
 
 #### Update Weights can be written as
-><img src="https://latex.codecogs.com/svg.image?\\W=&space;W-\eta&space;\frac{\partial&space;e}{\partial&space;w}\\&space;\\\\\mathrm{Where,\&space;\&space;W\&space;=\&space;Weight,\&space;\&space;\eta\&space;=\&space;Learning&space;\&space;rate,\&space;\&space;\partial&space;e=Change&space;\&space;in\&space;error,&space;\&space;\&space;\partial&space;w=Change&space;\&space;in\&space;weight}&space;\\\mathrm{Here&space;\&space;\&space;-\eta&space;\frac{\partial&space;e}{\partial&space;w}\&space;\&space;=&space;\&space;\&space;\Delta&space;W,&space;\&space;\&space;\&space;From&space;\&space;the\&space;above&space;\&space;\&space;(W_j&plus;\Delta&space;W_j)}" title="\\W= W-\eta \frac{\partial e}{\partial w}\\ \\\\\mathrm{Where,\ \ W\ =\ Weight,\ \ \eta\ =\ Learning \ rate,\ \ \partial e=Change \ in\ error, \ \ \partial w=Change \ in\ weight} \\\mathrm{Here \ \ -\eta \frac{\partial e}{\partial w}\ \ = \ \ \Delta W, \ \ \ From \ the\ above \ \ (W_j+\Delta W_j)}" />
+$$\Large{\color{Purple} W= W-\eta \frac{\partial e}{\partial w}}$$
 
+#### Where
+$$\Large{\color{Purple}\begin{matrix*}[l]
+ W &=& Weight \\
+ \eta &=&  Learning \ rate,\\
+ \partial e  &=& Change \ in\ error, \\
+ \partial w  &=& Change \ in\ weight\\
+ \end{matrix*}}$$
+
+$$\large{\color{Purple}Here \hspace{10pt} (-\eta \frac{\partial e}{\partial w}) \ = \  \Delta W, \ \ \ From \ the\ above \ \ (W_j+\Delta W_j) }$$
 
 ### Neural Network error Update Weights
 ![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
