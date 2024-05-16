@@ -101,47 +101,57 @@ $$\Large \sigma(z) = \begin{cases}
 
 
 * We are taking theta as $W_0X_0$ and $W_0X_0$ which is '**y intercept**' or '**c**' in **y=mX+c**
+
 $$\Large \sigma(z) = \begin{cases}
 +1 & if & W^{\top}X+bias \geq 0\\
 -1 & if & W^{\top}X+bias < 0\\
 \end{cases}$$  
 
-#### Bias
+### Bias
 ![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
-* In $y=mX+c$ ,
+* In $\large y=mX+c$ ,
    * c or bias helps the **shifting** from +ve to -ve and vice versa so that the output is controlled.
    * m or the slope helps the **rotation**.
-
+<p align="center">
  <img src="https://user-images.githubusercontent.com/12748752/136802531-79edaea5-9b55-4ae2-b2c5-a2205e3fce31.png" width=50%>
-
+</p>
 
 
 * Bias effects the output as the following it change the output class +ve to -ve.
 
-<img src="https://user-images.githubusercontent.com/12748752/136807286-303afa7c-d91e-4dae-94db-2ad88563fda7.png"  width=40%>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/12748752/136807286-303afa7c-d91e-4dae-94db-2ad88563fda7.png"  width=40%>
+</p>
 
 ### Perceptron learning Rule or Update Weights and Errors
 ![light](https://user-images.githubusercontent.com/12748752/136802581-e8e0607f-3472-44f7-a8b2-8ba82a0f8070.png)
-<img src="https://sebastianraschka.com/images/faq/classifier-history/perceptron-figure.png" width=40%>
+
+<p align="center">
+  <img src="https://sebastianraschka.com/images/faq/classifier-history/perceptron-figure.png" width=40%>
+</p>
+
 * As we know error is **(_Predicted Value_ - _Acctual Value_)** .
 * A Neural Network back propagate and updates **Weights** and **Bias**.
 
 
 * Now, the question is What would be the update weight?
 
-<img src="https://user-images.githubusercontent.com/12748752/138711107-3345c175-5d03-4b09-b8ad-0c0a517d74e6.png" width=40%/>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/12748752/138711107-3345c175-5d03-4b09-b8ad-0c0a517d74e6.png" width=40%/>
+</p>
 
 * The update value for each input is not same as each input weight has different contribution to the final error.
 * So the rectification of weight for each input would be different.
 
 
-<img src="https://user-images.githubusercontent.com/12748752/138711104-18be860b-4e6f-4baa-af73-c83f66853656.png" width=40%/>
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/12748752/138711104-18be860b-4e6f-4baa-af73-c83f66853656.png" width=40%/>
+</p>
 
 > <img src="https://latex.codecogs.com/svg.image?w_{i,j}&space;\leftarrow&space;w_{i,j}&space;&plus;&space;\eta(y_j&space;-&space;\hat{y_j})x_i" title="w_{i,j} \leftarrow w_{i,j} + \eta(y_j - \hat{y_j})x_i" />
 
 
-> #### Where
+#### Where
 > 
 >> <img src="https://latex.codecogs.com/svg.image?&space;w_{i,j}&space;\textrm{&space;:&space;connection&space;weight&space;between}&space;\&space;\&space;i^{th}&space;&space;\textrm{input&space;neuron&space;and&space;}&space;j^{th}&space;&space;\textrm{&space;output&space;neuron}" title=" w_{i,j} \textrm{ : connection weight between} \ \ i^{th} \textrm{input neuron and } j^{th} \textrm{ output neuron}" />.  
 >>
