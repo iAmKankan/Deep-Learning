@@ -30,24 +30,37 @@
 
 ### The Perceptron
 ![light](https://user-images.githubusercontent.com/12748752/136656706-ad904776-3e69-4a32-bc28-edfc9fd41cf7.png)
-
-* Its the simplest ANN architecture. It was invented by Frank Rosenblatt in 1957 and published as `Rosenblatt, Frank (1958), The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain, Cornell Aeronautical Laboratory, Psychological Review, v65, No. 6, pp. 386–408. doi:10.1037/h0042519`
+Its the simplest ANN architecture. It was invented by Frank Rosenblatt in 1957 and published as `Rosenblatt, Frank (1958), The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain, Cornell Aeronautical Laboratory, Psychological Review, v65, No. 6, pp. 386–408. doi:10.1037/h0042519`
  
-* Lets see the architecture shown below - 
+Lets see the architecture shown below - 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ArtificialNeuronModel_english.png/1024px-ArtificialNeuronModel_english.png" width=60%> 
   <br><ins><b><i>Perceptron </i></b></ins>
 </p>
 
-* Common activation functions used for Perceptrons are (with threshold at 0)- 
-<img src="https://latex.codecogs.com/svg.image?step(z)\&space;or\&space;heaviside(z)&space;=\begin{cases}0&space;&&space;z<0\\&space;1&space;&&space;z\geq&space;0\end{cases}&space;" title="step(z)\ or\ heaviside(z) =\begin{cases}0 & z<0\\ 1 & z\geq 0\end{cases} " />
+#### Common activation functions used for Perceptrons are (with threshold at $\large \theta$)- 
+<!--- img src="https://latex.codecogs.com/svg.image?step(z)\&space;or\&space;heaviside(z)&space;=\begin{cases}0&space;&&space;z<0\\&space;1&space;&&space;z\geq&space;0\end{cases}&space;" title="step(z)\ or\ heaviside(z) =\begin{cases}0 & z<0\\ 1 & z\geq 0\end{cases} " --->
 
-* Common activation functions used for Perceptrons are (with threshold at 0)- 
+$$\Large step(z) = \left \\{ \begin{matrix}
+0 & z<0\\
+1 & z\geq 0
+\end{matrix} \right.$$
 
-> <img src="https://latex.codecogs.com/svg.image?z\&space;=&space;\&space;X_1W_1&plus;X_2W_2&plus;X_3W_3&space;\&space;\&space;\textit{,&space;or&space;we&space;can&space;write&space;it&space;as&space;}\&space;\&space;\&space;z\&space;=&space;\&space;\sum_{i=1}^{n}&space;X_iW_i&space;&space;" title="z\ = \ X_1W_1+X_2W_2+X_3W_3 \ \ \textit{, or we can write it as }\ \ \ z\&space;=&space;\&space;\sum_{i=1}^{n} X_iW_i &space;" width=70% />
+<!--- <img src="https://latex.codecogs.com/svg.image?z\&space;=&space;\&space;X_1W_1&plus;X_2W_2&plus;X_3W_3&space;\&space;\&space;\textit{,&space;or&space;we&space;can&space;write&space;it&space;as&space;}\&space;\&space;\&space;z\&space;=&space;\&space;\sum_{i=1}^{n}&space;X_iW_i&space;&space;" title="z\ = \ X_1W_1+X_2W_2+X_3W_3 \ \ \textit{, or we can write it as }\ \ \ z\&space;=&space;\&space;\sum_{i=1}^{n} X_iW_i &space;" width=70% /> --->
 
-* If we want to multiply W and X we will end up with two matrices-
-* For multiplication of 2 matrices we need to have 1st matrix column= 2nd matrix row thats why we take transpose of matrix W -> <img src="https://latex.codecogs.com/svg.image?W^T" title="W^T" />
+#### For all inputs and weights are like the followings-
+$$\Large \begin{matrix*}[l]
+z &=& \ X_1W_1+X_2W_2+X_3W_3 \hspace{20pt} \large \textit{or we can write it as following- }\\
+z &=& \sum\limits_{i=1}^{n} X_iW_i\\
+\end{matrix*}$$
+
+
+#### If we want to multiply W and X we will end up with two matrices-
+* For multiplication of 2 matrices we need to have 1<sup>st</sup> matrix **column**= 2<sup>nd</sup> matrix **row**. That's why we take transpose of matrix W to W<sup>T</sup>.
+  
+$$\Large z\ = \ X_1W_1+X_2W_2+X_3W_3 \tag 1$$
+
+$$\Large W^{\top} = \begin{bmatrix*}[l]  W_1&W_2 & W_3 \end{bmatrix*}_{n\times m}$$
 
 > <img src="https://latex.codecogs.com/svg.image?z\&space;=&space;\&space;X_1W_1&plus;X_2W_2&plus;X_3W_3&space;---------(1)\\W^T=\begin{bmatrix}&space;W_1&W_2&space;&space;&&space;W_3&space;\\\end{bmatrix}_{(nXm)},&space;X=\begin{bmatrix}&space;X_1\\X_2\\&space;X_3\end{bmatrix}_{(mXn)}" title="z\ = \ X_1W_1+X_2W_2+X_3W_3 \\W^T=\begin{bmatrix} W_1&W_2 & W_3 \\\end{bmatrix}_{(nXm)}, X=\begin{bmatrix} X_1\\X_2\\ X_3\end{bmatrix}_{(mXn)}" />
 
