@@ -67,20 +67,17 @@ X_2\\
 X_3\\
 \end{bmatrix}\_{m \times n} $$
 
-$$\Large W^{\top} = \begin{bmatrix*}[l]  W_1 \\
+$$\Large \begin{bmatrix*}[l]  W_1 \\
 W_2 \\
 W_3 \\ 
 \end{bmatrix*}
-\hspace{20pt} X =
+\hspace{20pt} 
 \begin{bmatrix}
 X_1\\
 X_2\\
 X_3\\
-\end{bmatrix}$$
+\end{bmatrix} = W^{\top} X$$
 
-> <img src="https://latex.codecogs.com/svg.image?z\&space;=&space;\&space;X_1W_1&plus;X_2W_2&plus;X_3W_3&space;---------(1)\\W^T=\begin{bmatrix}&space;W_1&W_2&space;&space;&&space;W_3&space;\\\end{bmatrix}_{(nXm)},&space;X=\begin{bmatrix}&space;X_1\\X_2\\&space;X_3\end{bmatrix}_{(mXn)}" title="z\ = \ X_1W_1+X_2W_2+X_3W_3 \\W^T=\begin{bmatrix} W_1&W_2 & W_3 \\\end{bmatrix}_{(nXm)}, X=\begin{bmatrix} X_1\\X_2\\ X_3\end{bmatrix}_{(mXn)}" />
-
-> <img src="https://latex.codecogs.com/svg.image?\begin{bmatrix}W_1&space;\\W_2\\W_3\\\end{bmatrix}^{T}\begin{bmatrix}X_1&space;\\X_2\\X_3\\\end{bmatrix}&space;\&space;\&space;=\&space;\&space;W^TX" title="\begin{bmatrix}W_1 \\W_2\\W_3\\\end{bmatrix}^{T}\begin{bmatrix}X_1 \\X_2\\X_3\\\end{bmatrix} \ \ =\ \ W^TX" />
 
 ### Derivation
 
